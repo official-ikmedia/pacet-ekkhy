@@ -1,11 +1,12 @@
 :root {
-  --hijau: #4C977D;
-  --bg: #DDEFED;
+  --kuning: #fef8cd;
+  --bg: #60081d;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
 body {
   font-size: 1.3rem;
+  color: white;
   font-family: 'Work Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
   min-height: 4000px;
@@ -32,7 +33,7 @@ body {
 }
 
 .hero h1 {
-  font-family: "Engagement", Arial, Helvetica, sans-serif;
+  font-family: "Charmonman", Arial, Helvetica, sans-serif;
   font-size: 4.7rem;
 }
 
@@ -45,13 +46,13 @@ body {
 }
 
 .hero a {
-  color: var(--hijau);
+  color: var(--bs-red);
   background-color: #fffc4c;
 }
 
 .hero a:hover {
-  background-color: var(--hijau);
-  color: white;
+  background-color: var(--kuning);
+  color: black;
 }
 
 .nama-tamu {
@@ -64,13 +65,17 @@ body {
 }
 
 .mynavbar {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(87, 0, 0, 0.274) !important;
   backdrop-filter: blur(4px);
   font-size: 1.1rem;
 }
 
+.mynavbar a {
+  color: white;
+}
+
 .mynavbar a:hover {
-  color: var(--hijau);
+  color: var(--kuning);
 }
 
 .mynavbar .offcanvas {
@@ -84,12 +89,12 @@ body {
 }
 
 .mynavbar .nav-link {
-  color: #2A402B;
   text-transform: uppercase;
+  color: white;
 }
 
 .home2 {
-  background-image: url(../img/background/pasang-cincin3.webp);
+  background-image: url(../img/background/bg22.png);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -107,12 +112,10 @@ body {
 
 .home h2,
 .home2 h2,
-.info h2,
 .story h2,
-.rsvp h2,
 .turutmengundang h2 {
-  color: var(--hijau);
-  font-family: 'Engagement', Arial, Helvetica, sans-serif;
+  /* color: var(--bg); */
+  font-family: 'Charmonman', Arial, Helvetica, sans-serif;
   font-size: 4rem;
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -130,10 +133,11 @@ body {
   font-size: 75% !important;
   font-style: oblique;
   padding: 3rem;
+  color: var(--bg);
 }
 
 .panggilan a {
-  background: var(--hijau);
+  background: var(--kuning);
   text-decoration: none;
   color: #032505;
   font-size: 1rem;
@@ -157,17 +161,17 @@ body {
 
 .home2 p {
   font-size: 1.3rem;
-  color: #2A402B;
+  color: white;
 }
 
 .home2 .couple {
   margin-top: 20px;
 }
 
-.home2 .couple h3 {
-  font-family: 'Engagement';
+.home2 .couple h3, .info h3, .rsvp h3 {
+  font-family: 'Charmonman';
   font-size: 2.4rem;
-  color: var(--hijau);
+  color: var(--kuning);
 }
 
 .home2 .couple img {
@@ -175,19 +179,20 @@ body {
 }
 
 .info {
-  background-image: url(../img/background/bg02.webp);
+  /* background-image: url(../img/background/bg2.webp); */
+  background: var(--bg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
   margin-top: -3.8rem;
   padding-top: 7rem;
   padding-bottom: 5rem;
-  color: #2A402B;
 }
 
 .info .card {
-  background-color: #4c977d23;
+  background-color: transparent;
   border: none;
+  color: var(--kuning);
 }
 
 .info .card-body {
@@ -197,13 +202,13 @@ body {
 
 .info .card-footer {
   font-size: 1rem;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc85;
   line-height: 1.4rem;
 }
 
 .turutmengundang {
-  background-color: #ccc;
-  background-image: url(../img/background/bg02.webp);
+  background-color: var(--bg);
+  background-image: url(../img/background/bg2.webp);
   background-size: cover;
   min-height: 100vh;
   background-position: center;
@@ -242,30 +247,29 @@ body {
 
 .rsvp p,
 .rsvp form label {
-  color: #2A402B;
+  color: white;
 }
 
 .rsvp button {
-  background-color: var(--hijau);
-  color: white;
-  border: 1px solid var(--hijau);
+  background-color: var(--kuning);
+  color: var(--bs-red);
+  border: 1px solid var(--kuning);
 }
 
 .rsvp button:hover {
   background-color: #fffc4c;
-  color: var(--hijau);
+  color: black;
   border: 1px solid #fffc4c;
 }
 
 footer {
   padding: 2rem;
-  background-color: var(--hijau);
   color: white;
   font-size: 1rem;
 }
 
 footer a {
-  color: rgb(54, 7, 7);
+  color: rgb(255, 225, 0);
   text-decoration: none;
 }
 
@@ -423,8 +427,8 @@ footer li {
 
   .form-hadir {
     width: 90%;
-    padding: 1.8rem;
-    background: #4c977d85;
+    /* padding: 1.8rem;
+    background: #4c977d85; */
     border-radius: 0.6rem;
     -webkit-border-radius: 0.6rem;
     -moz-border-radius: 0.6rem;
@@ -454,10 +458,6 @@ footer li {
     border: 1px solid #4C977D;
   }
 
-  .rsvp p {
-    color: #000;
-  }
-
   .rsvp .form-label {
     color: #fff;
     border-bottom: #444;
@@ -465,7 +465,7 @@ footer li {
   }
 
   .hero h1 {
-    font-family: "Engagement", Arial, Helvetica, sans-serif;
+    font-family: "Charmonman", Arial, Helvetica, sans-serif;
     font-size: 3.4rem;
   }
 
@@ -550,7 +550,6 @@ footer li {
   .story h2 {
     font-size: 2.2rem;
     text-decoration: none;
-    color: #000;
   }
 
   .home,
@@ -567,23 +566,27 @@ footer li {
     margin-bottom: 0.2rem;
   }
 
-  .story {
+  /* .story {
     background-image: url(../img/background/hp1.webp);
     background-size: cover;
     min-height: 100vh;
     background-position: center;
-  }
+  } */
 
   .turutmengundang,
   .info {
-    background-color: #DDEFED;
-    background-image: url(../img/background/hp1.webp);
+    background-color: var(--bg);
+    /* background-image: url(../img/background/hp1.webp); */
     padding-bottom: 15rem;
     padding-top: 10rem;
   }
 
   .rsvp .row {
     margin-top: 6rem;
+  }
+
+  .rsvp .data-hadir {
+    margin-top: 2rem;
   }
 
   footer {
@@ -596,8 +599,8 @@ footer li {
     margin-bottom: 10px;
   }
 
-  .card .kisah-kami {
+  /* .card .kisah-kami {
     padding: 1.5rem !important;
-  }
+  } */
 
 }

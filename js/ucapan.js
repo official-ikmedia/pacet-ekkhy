@@ -56,7 +56,7 @@ async function fetchData() {
       data.sort((a, b) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime()); // Sort by timestamp descending
       data.forEach(item => {
          const comment = document.createElement('div');
-         comment.className = 'mb-4 bg-gradient bg-dark-subtle p-3 rounded';
+         comment.className = 'mb-4 bg-gradient p-3 rounded border border-light text-white';
          comment.innerHTML = `<div class="border-bottom fw-bold">${item.nama}</div> <div class="fst-italic mt-2">${item.doa}</div>`;
          commentsContainer.appendChild(comment);
       });
