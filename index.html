@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Wedding Pacet & Ekkhy</title>
+   <title>Wedding Pacet & Ekkhi</title>
 
    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
 
@@ -44,7 +44,8 @@
          <p data-aos="fade" data-aos-delay="100" data-aos-duration="1500">Akan melangsungkan pernikahan dalam:</p>
          <div class="simply-countdown mb-4" data-aos="fade" data-aos-delay="150" data-aos-duration="1500"></div>
          <h5 class="mt-4" data-aos="fade" data-aos-delay="100" data-aos-duration="1500">Kepada Yth,</h5>
-         <h5><span class="nama-tamu">Bapak/Ibu/Saudara/i</span></h5>
+         <h5 data-aos="fade" data-aos-delay="100" data-aos-duration="1500"><span
+               class="nama-tamu">Bapak/Ibu/Saudara/i</span></h5>
          <a href="#home" class="btn btn-lg mt-4 bg-gradient border-1 border-dark-subtle shadow" onClick="enableScroll()"
             data-aos="fade" data-aos-delay="200" data-aos-duration="1500"><i class="bi bi-envelope-fill"></i>
             Buka Undangan</a>
@@ -222,11 +223,12 @@
             <div class="col-md-9 col-12 text-center py-4">
                <h3 class="mb-4" data-aos="zoom-in" data-aos-duration="2000">Lokasi Resepsi</h3>
                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d992.9937634080609!2d120.4204183694879!3d-5.420760764552366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbc0f5448db51c5%3A0xebb97b97811a51f!2sKantor%20IK%20Media%20Official!5e0!3m2!1sen!2sid!4v1726097955182!5m2!1sen!2sid"
-                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d850.2555322118114!2d119.99423238487567!3d-5.557914685058471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMzMnMjUuNiJTIDExOcKwNTknMzkuOSJF!5e1!3m2!1sid!2sid!4v1772446221889!5m2!1sid!2sid"
+                  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade" class="shadow" data-aos="fade-up"
                   data-aos-duration="2000"></iframe>
-               <a href="https://maps.app.goo.gl/Qk1bBAXb8YgGBX6k9" target="_blank" class="btn btn-lg my-3 mt-4 w-50"
+
+               <a href="https://maps.app.goo.gl/FCMEBouyqJgQUZ8v6" target="_blank" class="btn btn-lg my-3 mt-4 w-50"
                   style="background: #fef8cd;;color: #60081d;" data-aos="zoom-in" data-aos-duration="1500"><i
                      class="bi bi-geo-fill"></i> Buka di Maps</a>
             </div>
@@ -409,7 +411,7 @@
                   kehormatan dan kebahagiaan bagi kami atas kehadiran Bapak/Ibu/Saudara/i, serta kerabat untuk hadir
                   memberikan doa restunya.
                </p>
-               <h3 class="text-center my-5" data-aos="fade-up" data-aos-duration="2000">Hormat Kami</h3>
+               <h3 class="text-center mt-5" data-aos="fade-up" data-aos-duration="2000">Hormat Kami</h3>
             </div>
             <div class="col-md-auto">
             </div>
@@ -440,9 +442,6 @@
                <li class="nav-item">
                   <a class="nav-link" href="#info"><i class="bi bi-info-square-fill"></i></a>
                </li>
-               <!-- <li class="nav-item">
-                  <a class="nav-link" href="#story"><i class="bi bi-suit-heart-fill"></i></a>
-               </li> -->
                <li class="nav-item">
                   <a class="nav-link" href="#rsvp"><i class="bi bi-journal-check"></i></a>
                </li>
@@ -461,7 +460,6 @@
       <div class="container">
          <div class="row">
             <div class="col text-center">
-               <div class="mb-3 logoasa"><img src="img/Desain ASA OK.webp" alt="ASA" loading="lazy"></div>
                <small class="block">2026 &copy; Pacet & Ekkhi. All Rights Reserved.</small>
                <small class="block">Design by <a href="https://instagram.com/iankonjo">@iankonjo</a></small>
 
@@ -603,7 +601,6 @@
       disableScroll();
    </script>
 
-
    <script>
       const params = new URLSearchParams(window.location.search);
       const nama = decodeURIComponent(params.get('n') || '');
@@ -618,6 +615,20 @@
       if (namaInput && nama) {
          namaInput.value = nama;
       }
+   </script>
+
+   <script type="text/javascript">
+      // Matikan Klik Kanan
+      document.addEventListener('contextmenu', event => event.preventDefault());
+
+      // Matikan F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+      document.onkeydown = function (e) {
+         if (event.keyCode == 123 ||
+            (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) ||
+            (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+            return false;
+         }
+      };
    </script>
 
 </body>
