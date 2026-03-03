@@ -1,1 +1,514 @@
-:root { --kuning: #fef8cd; --bg: #60081d; --shadow: 0 2px 2px rgb(0 0 0 / 0.5); } body { font-size: 1.3rem; color: white; font-family: 'Work Sans', Arial, Helvetica, sans-serif; font-weight: 400; min-height: 4000px; background-color: var(--bg); } .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(../img/background/bg2.webp); background-size: cover; background-position: center; z-index: -1; } .hero { position: relative; min-height: 100vh; overflow: hidden; } .hero h1 { font-family: "Charmonman", Arial, Helvetica, sans-serif; font-size: 4.7rem; } .hero h4 { font-size: 1.5rem; } .hero p { font-size: 1.3rem; } .hero a { color: var(--bs-red); background-color: #fef8cd; } .hero a:hover { background-color: var(--bg); color: var(--kuning); } .nama-tamu { font-family: 'Charmonman'; font-weight: 700; font-size: 2.5rem; background: var(--kuning); -webkit-background-clip: text; text-shadow: 0 0 2px rgba(0, 0, 0, 0.25); } .mynavbar { background-color: rgba(87, 0, 0, 0.274) !important; backdrop-filter: blur(4px); font-size: 1.1rem; } .mynavbar a { color: white; } .mynavbar a:hover { color: var(--kuning); } .mynavbar .offcanvas { height: 100vh; } .mynavbar .navbar-brand, .mynavbar .offcanvas-title { font-family: 'Charmonman', Arial, Helvetica, sans-serif; font-size: 2rem; } .mynavbar .nav-link { text-transform: uppercase; color: white; } .home2 { background-image: url(../img/background/bg22.png); background-position: center; background-size: cover; min-height: 100vh; margin-top: -3.8rem; padding-top: 7rem; padding-bottom: 10rem; } .home { min-height: 100vh; margin-top: -3.8rem; padding-top: 7rem; padding-bottom: 5rem; } .basmalah { width: auto; height: 80px; margin-bottom: 20px; } .quran p { font-size: 75% !important; font-style: oblique; padding: 3rem; color: var(--bg); } .panggilan a { background: var(--kuning); text-decoration: none; color: #032505; font-size: 1rem; padding: 6px 10px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; } .panggilan a:hover { background: #8a9c8a; } .home2 p { font-size: 1.3rem; color: white; } .home2 .couple { margin-top: 20px; } .home2 .couple h3, .info h3, .rsvp h3, .amplop-digital h3, .turutmengundang h3 { font-family: 'Charmonman'; font-size: 2.4rem; color: var(--kuning); } .home2 .couple img { width: 100%; } .info { background: var(--bg); background-position: center; background-size: cover; min-height: 100vh; margin-top: -3.8rem; padding-top: 10rem; padding-bottom: 5rem; } .info .card { background-color: transparent; border: none; color: var(--kuning); } .info .card-body { font-size: 1.1rem; font-weight: 600; } .info .card-footer { font-size: 1rem; border-top: 1px solid #cccccc85; line-height: 1.4rem; } .turutmengundang { background-color: var(--bg); background-image: url(../img/background/bg2.webp); background-size: cover; min-height: 100vh; background-position: center; } .turutmengundang h2 { font-family: 'Neonderthaw', Tahoma, Geneva, Verdana, sans-serif; font-size: 4.2rem; margin-top: -12rem; } .rsvp, .amplop-digital, .turutmengundang { padding-top: 10rem; padding-bottom: 6rem; } .rsvp { background-color: var(--bg); background-image: url(../img/background/hp1.webp); background-position: center; background-size: cover; min-height: 100vh; margin-top: -3.8rem; } .rsvp p, .rsvp form label { color: white; } .rsvp button { background-color: var(--kuning); color: var(--bs-red); border: 1px solid var(--kuning); } .rsvp button:hover { background-color: #fffc4c; color: black; border: 1px solid #fffc4c; } footer { padding: 2rem; color: white; font-size: 1rem; } footer a { color: rgb(255, 225, 0); text-decoration: none; } footer a:hover { color: white; } footer li { list-style: none; display: inline; margin: 0.5rem; } .audio-icon-wrapper { width: 3.5rem; height: 3.5rem; font-size: 3.5rem; position: fixed; bottom: 2.5rem; left: 2rem; cursor: pointer; color: white; opacity: 0.5; mix-blend-mode: difference; animation: rotating 4s linear infinite; transform-origin: center; display: flex; justify-content: center; align-items: center; line-height: 0; } .simply-countdown>.simply-section .simply-amount, .simply-countdown>.simply-section .simply-word { color: var(--bg); } .form-control:focus, .form-control:active, .form-label:focus, .form-label:active { box-shadow: none; } @keyframes rotating { from { transform: rotate(0); } to { transform: rotate(360deg); } } #comments-container { color: #fef8cd; } .jam-komentar { float: right; font-size:13px; font-weight: 300; font-style: italic; margin-top: 5px; } .isidoa { font-size: 1rem; } .amplop-digital img { height: 60px; width: auto; margin-bottom: 1rem; } .copy-wrapper { background-color: #fef8cd; border: 1px solid #bfdfffa8 !important; } .img-top-left, .img-top-right { position: absolute; width: 120px; margin-top: -4rem; } .img-top-left { left: 0; } .img-top-right { right: 0; } .home, .info, .amplop-digital, .footer { background-image: url(../img/background/Ornamen.webp); } /* Media Query */ /* Extra large */ @media (min-width: 1200px) {} /* laptop */ @media (max-width: 992px) { html { font-size: 80%; } .simply-countdown>.simply-section { padding: 70px; } } @media (min-width: 779px) { #menu-hp { display: none; } .img-top-left, .img-top-right { display: none; } } /* tablet */ @media (max-width: 768px) { html { font-size: 90%; } .simply-countdown>.simply-section { padding: 60px; margin: 5px; } .mynavbar .nav-link { font-size: 2rem; text-align: center; } .sticky-top { overflow: hidden; } .home p { font-size: 1.1rem; } .info .card-footer { font-size: 1.1rem; } .info .card-body { font-size: 1.3rem; } #menulaptop { display: none; } #navbar-phone { font-size: 2rem; } .menu2 { position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; } .menu2 .nav-pills { background: #fef8cd90; padding-left: 10px; padding-right: 10px; } .menu2 .nav-link { color: var(--bg); } .turutmengundang h2 { font-size: 3.9rem } } /* mobile phone */ @media (max-width: 576px) { .home p, .home2 p, .info p, .rsvp p, .amplop-digital p, .turutmengundang p { font-size: 1.1rem; line-height: 1.5rem; } .tampilan-hp { padding-top: 5rem; } .form-hadir { width: 90%; border-radius: 0.6rem; -webkit-border-radius: 0.6rem; -moz-border-radius: 0.6rem; -ms-border-radius: 0.6rem; -o-border-radius: 0.6rem; } .form-hadir h2 { font-size: 2.2rem; text-decoration: none; color: #fff; } .doa-doa { height: 35rem; overflow: auto; } .rsvp button { background-color: #fffc4c; color: black; border: 1px solid white; } .rsvp button:hover { background-color: #fff; border: 1px solid #4C977D; } .rsvp .form-label { color: #fff; border-bottom: #444; font-weight: 600; } .hero h1 { font-family: "Charmonman", Arial, Helvetica, sans-serif; font-size: 3.4rem; } .hero h4 { font-size: 1.4rem; } .hero::before { background-image: url(../img/background/hp1.webp); } .hero p { font-size: 1rem; } .quran p { line-height: 1.1rem; } .simply-countdown>.simply-section { padding: 35px; margin: 4px; } .simply-countdown>.simply-section .simply-amount { font-size: 1.6rem; line-height: 20px; font-weight: bolder; } .simply-countdown>.simply-section .simply-word { font-size: 0.8rem; } #menulaptop { display: none; } .info .card-body { font-size: 1.1rem; } i.bi.bi-clock.d-block.waktu, i.bi.bi-calendar3.d-block, i.bi.bi-clock.d-block, .pukulnya { display: none !important; } .tanggalnya { font-family: "Cookie", Arial, Helvetica, sans-serif; font-size: 2rem; font-weight: lighter; } .waktu { font-weight: normal; } .harinya { font-size: 1rem; font-family: "Work Sans", Arial, Helvetica, sans-serif; font-weight: normal; } .home { margin-top: 0; } .home .couple h3 { font-size: 2.5rem; font-weight: 500; } .home2 { padding-bottom: 10rem; } .home, .home2, .info, .rsvp, .amplop-digital, .turutmengundang { padding-top: 4rem; } .mempelaiwanita { margin-top: 3rem !important; } #navbar-phone { font-size: 1.5rem; margin-bottom: 0.2rem; } .turutmengundang, .info, .rsvp { background-color: var(--bg); padding-bottom: 10rem; } .rsvp .data-hadir { margin-top: 2rem; } footer { padding: 2rem; } .basmalah { width: auto; height: 50px; margin-bottom: 10px; } .amplop-digital img { height: 40px; } .amplop-digital .img-top-left, .amplop-digital .img-top-right { width: 120px; height: auto; } .turutmengundang h2 { font-size: 3.5rem } }
+:root {
+  --kuning: #fef8cd;
+  --bg: #60081d;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+body {
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  min-height: 4000px;
+  background-color: var(--bg);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background/bg2.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.hero h1 {
+  font-family: "Charmonman", Arial, Helvetica, sans-serif;
+  font-size: 4.7rem;
+}
+.hero h4 {
+  font-size: 1.5rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+.hero a {
+  color: var(--bs-red);
+  background-color: #fef8cd;
+}
+.hero a:hover {
+  background-color: var(--bg);
+  color: var(--kuning);
+}
+.nama-tamu {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--bg);
+}
+.label-undangan {
+  padding: 35px 35px 25px;
+}
+.mynavbar {
+  background-color: rgba(87, 0, 0, 0.274) !important;
+  backdrop-filter: blur(4px);
+  font-size: 1.1rem;
+}
+.mynavbar a {
+  color: white;
+}
+.mynavbar a:hover {
+  color: var(--kuning);
+}
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Charmonman", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.mynavbar .nav-link {
+  text-transform: uppercase;
+  color: white;
+}
+.home2 {
+  background-image: url(../img/background/bg22.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -3.8rem;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+.home {
+  min-height: 100vh;
+  margin-top: -3.8rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+.basmalah {
+  width: auto;
+  height: 80px;
+  margin-bottom: 20px;
+}
+.quran p {
+  font-size: 75% !important;
+  font-style: oblique;
+  padding: 3rem;
+  color: var(--bg);
+}
+.panggilan a {
+  background: var(--kuning);
+  text-decoration: none;
+  color: #032505;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.panggilan a:hover {
+  background: #8a9c8a;
+}
+.home2 p {
+  font-size: 1.3rem;
+  color: white;
+}
+.home2 .couple {
+  margin-top: 20px;
+}
+.home2 .couple h3,
+.info h3,
+.rsvp h3,
+.amplop-digital h3,
+.turutmengundang h3 {
+  font-family: "Charmonman";
+  font-size: 2.4rem;
+  color: var(--kuning);
+}
+.home2 .couple img {
+  width: 100%;
+}
+.info {
+  background: var(--bg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -3.8rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+.info .card {
+  background-color: transparent;
+  border: none;
+  color: var(--kuning);
+}
+.info .card-body {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.info .card-footer {
+  font-size: 1rem;
+  border-top: 1px solid #cccccc85;
+  line-height: 1.4rem;
+}
+.turutmengundang {
+  background-color: var(--bg);
+  background-image: url(../img/background/bg2.webp);
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+}
+.turutmengundang h2 {
+  font-family: "Neonderthaw", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4.2rem;
+  margin-top: -12rem;
+}
+.rsvp,
+.amplop-digital,
+.turutmengundang {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+.rsvp {
+  background-color: var(--bg);
+  background-image: url(../img/background/hp1.webp);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -3.8rem;
+}
+.rsvp p,
+.rsvp form label {
+  color: white;
+}
+.rsvp button {
+  background-color: var(--kuning);
+  color: var(--bs-red);
+  border: 1px solid var(--kuning);
+}
+.rsvp button:hover {
+  background-color: #fffc4c;
+  color: black;
+  border: 1px solid #fffc4c;
+}
+footer {
+  padding: 2rem;
+  color: white;
+  font-size: 1rem;
+}
+footer a {
+  color: rgb(255, 225, 0);
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+.audio-icon-wrapper {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 3.5rem;
+  position: fixed;
+  bottom: 2.5rem;
+  left: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+  color: var(--bg);
+}
+.form-control:focus,
+.form-control:active,
+.form-label:focus,
+.form-label:active {
+  box-shadow: none;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#comments-container {
+  color: #fef8cd;
+}
+.jam-komentar {
+  float: right;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 5px;
+}
+.isidoa {
+  font-size: 1rem;
+}
+.amplop-digital img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+.copy-wrapper {
+  background-color: #fef8cd;
+  border: 1px solid #bfdfffa8 !important;
+}
+.img-top-left,
+.img-top-right {
+  position: absolute;
+  width: 120px;
+  margin-top: -4rem;
+}
+.img-top-left {
+  left: 0;
+}
+.img-top-right {
+  right: 0;
+}
+.home,
+.info,
+.amplop-digital,
+.footer {
+  background-image: url(../img/background/Ornamen.webp);
+} /* Media Query */ /* Extra large */
+@media (min-width: 1200px) {
+} /* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 80%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+}
+@media (min-width: 779px) {
+  #menu-hp {
+    display: none;
+  }
+  .img-top-left,
+  .img-top-right {
+    display: none;
+  }
+} /* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .home p {
+    font-size: 1.1rem;
+  }
+  .info .card-footer {
+    font-size: 1.1rem;
+  }
+  .info .card-body {
+    font-size: 1.3rem;
+  }
+  #menulaptop {
+    display: none;
+  }
+  #navbar-phone {
+    font-size: 2rem;
+  }
+  .menu2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu2 .nav-pills {
+    background: #fef8cd90;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .menu2 .nav-link {
+    color: var(--bg);
+  }
+  .turutmengundang h2 {
+    font-size: 3.9rem;
+  }
+} /* mobile phone */
+@media (max-width: 576px) {
+  .home p,
+  .home2 p,
+  .info p,
+  .rsvp p,
+  .amplop-digital p,
+  .turutmengundang p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .tampilan-hp {
+    padding-top: 5rem;
+  }
+  .form-hadir {
+    width: 90%;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+  }
+  .form-hadir h2 {
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  .doa-doa {
+    height: 35rem;
+    overflow: auto;
+  }
+  .rsvp button {
+    background-color: #fffc4c;
+    color: black;
+    border: 1px solid white;
+  }
+  .rsvp button:hover {
+    background-color: #fff;
+    border: 1px solid #4c977d;
+  }
+  .rsvp .form-label {
+    color: #fff;
+    border-bottom: #444;
+    font-weight: 600;
+  }
+  .hero h1 {
+    font-family: "Charmonman", Arial, Helvetica, sans-serif;
+    font-size: 3.4rem;
+  }
+  .hero h4 {
+    font-size: 1.4rem;
+  }
+  .hero::before {
+    background-image: url(../img/background/hp1.webp);
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .quran p {
+    line-height: 1.1rem;
+  }
+  .simply-countdown > .simply-section {
+    padding: 35px;
+    margin: 4px;
+  }
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 1.6rem;
+    line-height: 20px;
+    font-weight: bolder;
+  }
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 0.8rem;
+  }
+  #menulaptop {
+    display: none;
+  }
+  .info .card-body {
+    font-size: 1.1rem;
+  }
+  i.bi.bi-clock.d-block.waktu,
+  i.bi.bi-calendar3.d-block,
+  i.bi.bi-clock.d-block,
+  .pukulnya {
+    display: none !important;
+  }
+  .tanggalnya {
+    font-family: "Cookie", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  .waktu {
+    font-weight: normal;
+  }
+  .harinya {
+    font-size: 1rem;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+  .home {
+    margin-top: 0;
+  }
+  .home .couple h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .home2 {
+    padding-bottom: 10rem;
+  }
+  .home,
+  .home2,
+  .info,
+  .rsvp,
+  .amplop-digital,
+  .turutmengundang {
+    padding-top: 4rem;
+  }
+  .mempelaiwanita {
+    margin-top: 3rem !important;
+  }
+  #navbar-phone {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .turutmengundang,
+  .info,
+  .rsvp {
+    background-color: var(--bg);
+    padding-bottom: 10rem;
+  }
+  .rsvp .data-hadir {
+    margin-top: 2rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+  .basmalah {
+    width: auto;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .amplop-digital img {
+    height: 40px;
+  }
+  .amplop-digital .img-top-left,
+  .amplop-digital .img-top-right {
+    width: 120px;
+    height: auto;
+  }
+  .turutmengundang h2 {
+    font-size: 3.5rem;
+  }
+}
