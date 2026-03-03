@@ -501,7 +501,20 @@
       const id = params.get("t");
 
       if (id) {
-         fetch("https://script.google.com/macros/s/AKfycbzLYYAx77RXEHws_s8WMuXrEj-9MitW7j0ox3dj-t0Vxw7Aj7oOxLFb3r72sVU_-N3uOg/exec?t=" + id);
+         fetch("https://script.google.com/macros/s/AKfycbzLYYAx77RXEHws_s8WMuXrEj-9MitW7j0ox3dj-t0Vxw7Aj7oOxLFb3r72sVU_-N3uOg/exec?t=" + id)
+            .then(res => res.json())
+            .then(data => {
+               if (data.status === "ok") {
+                  document.querySelector(".nama-tamu").innerText = data.nama;
+               } else {
+                  document.querySelector(".nama-tamu").innerText = "Tamu Undangan";
+               }
+            })
+            .catch(() => {
+               document.querySelector(".nama-tamu").innerText = "Tamu Undangan";
+            });
+      } else {
+         document.querySelector(".nama-tamu").innerText = "Tamu Undangan";
       }
    </script>
 
