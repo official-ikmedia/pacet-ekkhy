@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Dashboard Undangan</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+
+    <div id="loginBox">
+
+      <h3>Login Admin</h3>
+
+      <input id="password" type="password" class="form-control mb-3">
+
+      <button class="btn btn-primary" onclick="login()">Login</button>
+
+    </div>
+
+    <div id="dashboard" style="display:none">
+
+      <h3 class="mb-4">Dashboard Undangan</h3>
+
+      <div class="card p-3 mb-4">
+
+        <h5>Tambah Tamu</h5>
+
+        <input id="nama" class="form-control mb-2" placeholder="Nama">
+
+        <input id="noWA" class="form-control mb-2" placeholder="No WA">
+
+        <button onclick="tambah()" class="btn btn-success">Tambah</button>
+
+      </div>
+
+      <div class="card p-3">
+
+        <h5>Daftar Tamu</h5>
+
+        <table class="table">
+
+          <thead>
+
+            <tr>
+              <th>Nama</th>
+              <th>Link</th>
+              <th>WA</th>
+            </tr>
+
+          </thead>
+
+          <tbody id="data"></tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    const API = "https://script.google.com/macros/s/AKfycbzLYYAx77RXEHws_s8WMuXrEj-9MitW7j0ox3dj-t0Vxw7Aj7oOxLFb3r72sVU_-N3uOg/exec"
+
+    /* LOGIN */
+
+    function login() {
+
+      fetch(API, {
+        method: "POST",
+        body: new URLSearchParams({
+          action: "login",
+          password: document.getElementById("password").value
+        })
+      })
+        .then(r => r.json())
+        .then(res => {
+
+          if (res.status == "success") {
+
+            document.getElementById("loginBox").style.display = "none"
+            document.getElementById("dashboard").style.display = "block"
+
+            load()
+
+          } else {
+
+            alert("Password salah")
+
+          }
+
+        })
+
+    }
+
+    /* TAMBAH */
+
+    function tambah() {
+
+      fetch(API, {
+        method: "POST",
+        body: new URLSearchParams({
+          action: "add",
+          nama: nama.value,
+          noWA: noWA.value
+        })
+      })
+        .then(r => r.json())
+        .then(res => {
+
+          load()
+
+        })
+
+    }
+
+    /* LOAD DATA */
+
+    function load() {
+
+      fetch(API + "?list=true")
+        .then(r => r.json())
+        .then(res => {
+
+          let html = ""
+
+          res.data.forEach(d => {
+
+            html += `
+
+<tr>
+
+<td>${d.nama}</td>
+
+<td>
+<input value="${d.link}" class="form-control">
+<button onclick="copy('${d.link}')" class="btn btn-sm btn-primary mt-1">Copy</button>
+</td>
+
+<td>
+<a target="_blank" href="https://wa.me/${d.noWA}?text=${encodeURIComponent(d.link)}" class="btn btn-success btn-sm">
+Kirim WA
+</a>
+</td>
+
+</tr>
+
+`
+
+          })
+
+          document.getElementById("data").innerHTML = html
+
+        })
+
+    }
+
+    /* COPY */
+
+    function copy(text) {
+
+      navigator.clipboard.writeText(text)
+
+      alert("Link disalin")
+
+    }
+
+  </script>
+
+</body>
+
+</html>
